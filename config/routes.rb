@@ -11,6 +11,7 @@ Fragen::Application.routes.draw do
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
+  match 'questions/:id/plusone' => 'questions#plusone', :as => :plusone
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):

@@ -1,5 +1,6 @@
-<h1>Listing questions</h1>
 
+<h1>Listing questions</h1>
+<p id="notice"><%= notice %></p>
 <table>
   <tr>
     <th>Question</th>
@@ -15,9 +16,11 @@
     <td><%= question.question %></td>
     <td><%= question.comments %></td>
     <td><%= question.votes %></td>
+    <td><%= link_to ' +1 ', plusone_path(question) %></td>
     <td><%= link_to 'Show', question %></td>
     <td><%= link_to 'Edit', edit_question_path(question) %></td>
     <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td></td>
   </tr>
 <% end %>
 </table>
