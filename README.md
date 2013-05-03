@@ -1,7 +1,27 @@
 Create this Application
 ========================
 
+    rails new fragen
+    cd fragen
+    rails g scaffold question question:string comments:text votes:integer
+    rake db:migrate
+    rails s
+(edit root in config/routes.rb)
+    rm public/index.html
+    git init
+    git add .
+    git commit -m "initial commit"
+(edit Gemfile to use pg in production)
+    heroku create
+    git push heroku master
+    heroku run rake db:migrate
+    heroku rename info3-questions
+    heroku open
 
+
+Heroku
+======
+This app is available on Heroku [http://info3-questions.herokuapp.com/](http://info3-questions.herokuapp.com/)
 
 Add +1 Button
 ==============

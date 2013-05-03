@@ -4,7 +4,7 @@
 <table>
   <tr>
     <th>Question</th>
-    <th>Comments</th>
+    <!--<th>Comments</th>-->
     <th>Votes</th>
     <th></th>
     <th></th>
@@ -14,7 +14,7 @@
 <% @questions.each do |question| %>
   <tr>
     <td><%= question.question %></td>
-    <td><%= question.comments %></td>
+    <!--<td><%= question.comments %></td>-->
     <td><%= question.votes %></td>
     <td><%= link_to ' +1 ', plusone_path(question) %></td>
     <td><%= link_to 'Show', question %></td>
