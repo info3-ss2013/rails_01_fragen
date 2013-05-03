@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
 
   def plusone
       @question = Question.find(request[:id])
-      @question.votes = (@question.votes || 1) +1
+      @question.plusone
       @question.save
     respond_to do |format|
       format.html { redirect_to questions_url, notice: "Plus one for '#{@question.question}'."}
