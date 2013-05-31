@@ -6,12 +6,19 @@ Create this Application
     rails g scaffold question question:string comments:text votes:integer
     rake db:migrate
     rails s
+
 (edit root in config/routes.rb)
+
     rm public/index.html
     git init
     git add .
     git commit -m "initial commit"
+
+Heroku (optional)
+-------
 (edit Gemfile to use pg in production)
+(heroku toolbelt installieren: https://toolbelt.heroku.com)
+
     heroku create
     git push heroku master
     heroku run rake db:migrate
